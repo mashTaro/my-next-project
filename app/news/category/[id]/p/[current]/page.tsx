@@ -12,7 +12,7 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
-  const current = parseInt(params.current as string, 10); //10進数で数値型に変換する
+  const current = parseInt(params.current as string, 10);
 
   if (Number.isNaN(current) || current < 1) {
     notFound();
